@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Alisha 💖</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+    font-family:Arial;
+    text-align:center;
+    overflow:hidden;
+}
+
+.container{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,0,0,0.3);
+}
+
+h1{ color:#ff4d6d; }
+
+button{
+    padding:15px 35px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin:10px;
+}
+
+.yes{ background:#00c853; color:white; }
+.no{ background:#d50000; color:white; }
+
+#result{
+    margin-top:25px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+#flowerLayer{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Dear Mam Alisha 💖<br>
+    Do you want to stay in relationship now or not?</h1>
+
+    <button class="yes" onclick="yesClicked()">YES 💍</button>
+    <button class="no" onclick="noClicked()">NO 💔</button>
+
+    <div id="result"></div>
+<div id="answer" style="font-size:22px; margin-top:10px;"></div>
+</div>
+
+<div id="flowerLayer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
